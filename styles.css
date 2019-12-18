@@ -1,0 +1,86 @@
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1em 0;
+}
+
+header {
+
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    padding: 2px 2px;
+    margin: 1px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #be3144;
+    grid-area: nav; 
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    color: yellow;
+}
+
+.welcome {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: welcome;
+    height: 100vh;
+    color: white;
+    background-color: black;
+}
+
+.projects {
+    grid-area: projects;
+    color: white;
+    background-color: #45567d;
+}
+
+.contact {
+    grid-area: contact;
+    color: white;
+    background-color: #303841;
+}
+
+.container {
+    /* Grid Fallback */
+    display: flex;
+    flex-wrap: wrap;
+
+    /*Supports Grid*/
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav" 
+        "welcome"
+        "projects"
+        "contact";
+}
+
+.project-tile {
+
+}
+
+hr {
+    border: 2px solid #be3144;
+    border-radius: 5px;
+}
+
