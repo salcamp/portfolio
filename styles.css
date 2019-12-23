@@ -8,8 +8,8 @@ header {
 
 }
 
-h1, h2, h3 {
-
+h1 {
+    font-size: 3em;
 }
 
 .nav {
@@ -50,6 +50,10 @@ h1, h2, h3 {
     height: 100vh;
     color: white;
     background-color: black;
+}
+
+.welcome h3 {
+    color: #be3144;
 }
 
 .projects-title {
